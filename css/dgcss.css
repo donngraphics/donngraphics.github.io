@@ -4,53 +4,63 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  font-size: 62.5%;
+}
+
 body {
 
   margin: auto 0;
 
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
+/* 
 * {
   margin-top: 0;
-}
+} */
+
+
 
 @media only screen and (max-width: 600px) {
 
-  .main-nav {
-    font-size: .5em;
-    padding: 0;
-  }
-
-  .nav2 {
-    font-size: .5em;
-    padding: 0;
-  }
-
-  header {
-    font-size: .5em;
-
-  }
-
-  .dog img {
+  /* header {
     width: 100%;
+  } */
+
+  /* .cover {
+    width: 100vw;
+  } */
+
+  /* body {
+    background: black;
+  } */
+
+  .top-nav {
+    /* visibility: hidden; */
+    font-size: 1px;
+    color: black;
+    background-color: blue;
+    padding: 0;
   }
 
-  main {
-
-    font-size: .6em;
-
+  html {
+    font-size: 40%;
   }
 
-  .homeLinks {
-    flex-direction: column;
-    align-items: center;
 
 
-
-  }
 
 }
+
 
 
 header {
@@ -58,9 +68,122 @@ header {
 
 }
 
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #FFFFFF;
+  list-style: none;
+  margin: 0;
+
+
+  border-bottom: 2px solid #eee;
+  box-shadow: 0 8px 8px -4px eee;
+
+
+}
+
+.top-nav li {
+  padding: 2rem;
+  color: #075486;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+
+
+}
+
+.push {
+  margin-right: auto;
+  padding: 0px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #075486;
+
+
+
+
+}
+
+.top-nav a:hover {
+
+  text-shadow: 2px 2px 4px #7e7e7e7e;
+
+}
+
+.cover {
+
+  background: url(../images/coverbanner.jpg) no-repeat center center fixed;
+
+  height: 45rem;
+  /* position: absolute;
+  width: 100%; */
+
+}
+
+
+
+
+header {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 10px #000;
+  position: relative;
+}
+
+header h1 {
+  padding-top: 7%;
+  margin-top: 0;
+  font-size: 10rem;
+  font-family: 'Nixie One', cursive;
+  letter-spacing: 2rem;
+
+}
+
+header h2 {
+  margin-top: -9rem;
+  font-size: 4rem;
+  letter-spacing: 5px;
+
+  font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+.dp3headshot {
+  border-radius: 50%;
+  background: #000;
+  width: 25rem;
+  height: 25rem;
+
+  position: absolute;
+
+  bottom: -12rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  left: 0;
+  right: 0;
+
+  z-index: 9;
+  background: url(../images/DRP3_Headshot_crop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.divider {
+  background: #FFF;
+  height: 15rem;
+}
+
+
+
 .main p {
 
-  font-size: 2em;
+  font-size: 2.5rem;
   text-align: justify;
 
 }
@@ -70,76 +193,6 @@ header {
   width: 50%;
   margin: auto;
 }
-
-
-.main-nav {
-  display: flex;
-  background-color: #075486;
-  list-style: none;
-  margin: 0;
-
-
-}
-
-nav .main-nav li {
-  padding: 20px;
-  color: #ffffff;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2em;
-}
-
-.push {
-  margin-left: auto;
-}
-
-nav a {
-  text-decoration: none;
-  color: #FFFFFF;
-
-}
-
-nav .main-nav a:hover {
-  color: cyan;
-
-}
-
-
-
-.nav2 {
-
-  list-style: none;
-  margin: 0;
-
-}
-
-.homeLinks {
-
-  display: flex;
-
-  list-style: none;
-  margin: 0;
-  justify-content: center;
-
-
-}
-
-header h1 {
-  font-size: 7em;
-  font-family: 'Nixie One', cursive;
-  letter-spacing: 20px;
-}
-
-header h2 {
-  padding-top: 1px;
-  font-size: 2em;
-  letter-spacing: 5px;
-  /* margin-top: -55px; */
-  font-family: 'Roboto Condensed', sans-serif;
-  margin-top: -40px;
-
-}
-
-
 
 .homeLinks li {
 
@@ -164,9 +217,30 @@ header h2 {
 
 
 
+.nav2 {
+
+  list-style: none;
+  margin: 0;
+
+}
+
+.homeLinks {
+
+  display: flex;
+
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+
+
+}
+
+
+
+
 
 .dog img {
-  width: 35%;
+  width: 60vw;
   margin: auto;
 }
 
