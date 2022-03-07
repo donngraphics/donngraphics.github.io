@@ -142,10 +142,14 @@ header {
 
 .cover {
 
-  background: url(../images/coverbanner.jpg) no-repeat center center fixed;
+  background: url(../images/coverbanner.jpg);
 
   height: 45rem;
 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
