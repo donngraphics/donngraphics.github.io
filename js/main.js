@@ -7,8 +7,5 @@ smallMenu.addEventListener('click', openMenu);
 
 function openMenu() {
 
-    separate.style.background = 'red';
-    // console.log('test');
-    // mobileMenu.style.display = "flex";
     mobileMenu.classList.toggle("reveal");
 }
