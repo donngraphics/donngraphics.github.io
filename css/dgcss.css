@@ -223,14 +223,14 @@ header h2 {
 }
 
 
-.main h2 {
+.main h2, .websites h2 {
   font-size: 5rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #3b3b3b;
 
 }
 
-.main p {
+.main p, .websites p {
 
   font-size: 2.5rem;
   text-align: justify;
@@ -382,6 +382,14 @@ header h2 {
   top: 0;
 }
 
+/* .websites img {
+  width: 25%;
+} */
+
+footer {
+  text-align: center;
+}
+
 @media only screen and (max-width: 690px) {
 
   .top-nav li {
@@ -413,8 +421,11 @@ header h2 {
     display: none;
   }
 
-}
+  .websites img {
+    width: 100%;
+  }
 
+}
 
 
 
